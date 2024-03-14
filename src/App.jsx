@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 import Form from "react-bootstrap/Form";
@@ -21,6 +20,7 @@ const categories = [
   { id: 3, name: "Delicatessen" },
 ];
 
+// eslint-disable-next-line react/prop-types
 const IconButton = ({ icon }) => (
   <button type="button" onClick={() => alert("Ürün silindi!")}>
     {icon}
@@ -37,7 +37,7 @@ function App() {
   const [filteredShopId, setFilteredShopId] = useState("");
   const [filteredCategoryId, setFilteredCategoryId] = useState("");
   const [filteredStatus, setFilteredStatus] = useState("all");
-  const [filteredName, setFilteredName] = useState("");
+  const [filteredName] = useState("");
   const [showAlert, setShowAlert] = useState(false);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
