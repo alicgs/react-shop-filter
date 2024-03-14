@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgb(3, 11, 105) 0%, #5858a8) ;
+    color:white
+
+}
+.label-head{
+    color: #ffffff;
+    border-bottom: 1px solid #5858a8;
+    
+}
